@@ -215,7 +215,7 @@ nav .container {
    scale: 1.1;
 }
 
-.news-section {
+.news-section, .portfolio-section {
    width: 100%;
    display: flex;
    flex-direction: column;
@@ -224,7 +224,7 @@ nav .container {
    margin: 128px 0;
 }
 
-.news-section h2 {
+.news-section h2, .portfolio-section h2 {
    font-family: 'Futura Medium';
    font-size: 32px;
    text-align: center;
@@ -263,7 +263,7 @@ nav .container {
    transition: 200ms ease-in;
 }
 
-.news-content {
+.news-content, .portfolio-content {
    width: 100%;
    height: 100%;
    display: flex;
@@ -273,14 +273,14 @@ nav .container {
    margin-bottom: 32px;
 }
 
-.news-content .news-card {
+.news-content .news-card, .portfolio-content .portfolio-card {
    width: 304px;
    display: flex;
    flex-direction: column;
    text-align: left;
 }
 
-.news-content .news-card > img {
+.news-content .news-card > img, .portfolio-content .portfolio-card > img {
    border-radius: 8px;
    border: 1px solid var(--line-color);
    margin-bottom: 8px;
@@ -292,12 +292,12 @@ nav .container {
    margin-bottom: 8px;
 }
 
-.news-content .news-card h3 {
+.news-content .news-card h3, .portfolio-content .portfolio-card h3 {
    font-size: 24px;
    margin-bottom: 8px;
 }
 
-.news-content .news-card p {
+.news-content .news-card p, .portfolio-content .portfolio-card p  {
    height: 3rem;
    font-size: 16px;
    font-family: 'Futura Light';
@@ -388,6 +388,28 @@ nav .container {
    border: 2px solid var(--text-color);
    border-radius: 8px;
    transition: 200ms ease-in;
+}
+
+.portfolio-section h2 {
+   margin-bottom: 64px;
+}
+
+.portfolio-content .portfolio-card {
+   border-radius: 8px;
+   border: 1px solid var(--line-color);
+}
+
+.portfolio-content .portfolio-card img {
+   margin-bottom: 16px;
+}
+
+.portfolio-content .portfolio-card h3 {
+   padding: 0 16px;
+   margin-bottom: 16px;
+}
+
+.portfolio-content .portfolio-card p {
+   padding: 0 16px;
 }
 
 @keyframes slide {
