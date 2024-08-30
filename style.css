@@ -148,7 +148,7 @@ nav .container {
    gap: 16px;
 }
 
-.hero-content .button button, .about-content .button button {
+.hero-content .button button, .about-content .button button, .news-container button {
    font-size: 20px;
    font-family: 'Futura Medium';
    width: 170px;
@@ -160,7 +160,7 @@ nav .container {
    transition: 200ms ease-in;
 }
 
-.hero-content .button button:hover, .about-content .button button:hover, .news-container .search-bar .search-icon:hover {
+.hero-content .button button:hover, .about-content .button button:hover, .news-container .search-bar .search-icon:hover, .news-container button:hover {
    filter: brightness(1.2);
 }
 
@@ -270,6 +270,7 @@ nav .container {
    justify-content: center;
    flex-wrap: wrap;
    gap: 64px;
+   margin-bottom: 32px;
 }
 
 .news-content .news-card {
@@ -318,6 +319,12 @@ nav .container {
    color: #7DD3FC;
 }
 
+.news-container button {
+   font-size: 16px;
+   width: 126px;
+   height: 52px;
+}
+
 .services-section {
    display: flex;
    flex-direction: column;
@@ -344,7 +351,7 @@ nav .container {
 
 .services-section .services-content .services-card {
    width: 304px;
-   height: 430px;
+   height: 100%;
    background-color: #EFF6FF;
    padding: 32px;
    border-radius: 8px;
@@ -426,6 +433,10 @@ nav .container {
       width: 100%;
       z-index: 1000;
       padding: 32px 0;
+   }
+
+   .hero-section, .about-section {
+      margin-bottom: 256px;
    }
 
    #nav-links.active {
